@@ -1,6 +1,6 @@
 {
   "name": "git-commit-on-save",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "ruby0b",
   "repository": {
     "url": "https://github.com/ruby0b/vscode-git-commit-on-save"
