@@ -4,6 +4,9 @@ on:
       - "v*"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 name: Release and Publish Extension
 jobs:
   release-and-deploy:
