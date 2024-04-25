@@ -1,10 +1,10 @@
-# Git Auto-Commit
+# Git Commit-On-Save
 
 This extension automatically commits (and syncs) modified files.
 
 ## Extension Settings
 
-- `git-auto-commit.events`: An array of events that will trigger an auto-commit.
+- `git-commit-on-save.events`: An array of events that will trigger an automatic commit.
 
 ## Requirements
 

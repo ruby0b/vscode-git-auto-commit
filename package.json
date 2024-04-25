@@ -1,11 +1,11 @@
 {
-  "name": "git-auto-commit",
-  "version": "0.0.1",
+  "name": "git-commit-on-save",
+  "version": "0.0.2",
   "publisher": "ruby0b",
   "repository": {
-    "url": "https://github.com/ruby0b/vscode-git-auto-commit"
+    "url": "https://github.com/ruby0b/vscode-git-commit-on-save"
   },
-  "displayName": "Git Auto-Commit",
+  "displayName": "Git Commit-On-Save",
   "description": "Automatically commit modified files",
   "engines": {
     "vscode": "^1.85.0"
@@ -28,11 +28,10 @@
   "contributes": {
     "commands": [],
     "configuration": {
-      "title": "Git Auto-Commit",
       "properties": {
-        "git-auto-commit.events": {
+        "git-commit-on-save.events": {
           "type": "array",
-          "description": "Events that will trigger auto commit",
+          "description": "Events that will trigger an automatic commit",
           "items": {
             "type": "string",
             "enum": [
