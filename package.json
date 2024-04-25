@@ -1,0 +1,64 @@
+{
+  "name": "git-auto-commit",
+  "version": "0.0.1",
+  "publisher": "ruby0b",
+  "repository": {
+    "url": "https://github.com/ruby0b/vscode-git-auto-commit"
+  },
+  "displayName": "Git Auto-Commit",
+  "description": "Automatically commit modified files",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "tags": [
+    "git",
+    "auto",
+    "commit"
+  ],
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "Git Auto-Commit",
+      "properties": {
+        "git-auto-commit.events": {
+          "type": "array",
+          "description": "Events that will trigger auto commit",
+          "items": {
+            "type": "string",
+            "enum": [
+              "modify"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
